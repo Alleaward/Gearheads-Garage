@@ -213,19 +213,23 @@ footer{
 }
 
 /*--------------Smaller Resolutions  //  Phone ------------------------------*/
-@media screen and (max-width: 1440px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
+@media screen and (max-width: 1400px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
   html{
-    font-size: 15px;
-    text-align: center;
+    text-align: left;
+  }
+  #headerImg{
+    float: left;
+    margin-top: 35px;
+    margin-bottom: -20px;
   }
   header h1{
-    width: 100%;
+    width: 85%;
     color: white;
     font-weight: bold;
     font-style: italic;
     font-size: 300%;
     margin-bottom: -1rem;
-    float: left;
+    float: right;
   }
   header h2{
     width: 100%;
@@ -235,7 +239,31 @@ footer{
 }
 
 @media screen and (max-width: 1080px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
-
+  html{
+    font-size: 15px;
+    text-align: left;
+  }
+  #headerImg{
+    float: left;
+    margin-top: 35px;
+    margin-bottom: -20px;
+    width: 14%;
+  }
+  header h1{
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 275%;
+    margin-bottom: -1rem;
+    float: right;
+    padding-top: 25px;
+  }
+  header h2{
+    width: 100%;
+    font-style: italic;
+    float: left;
+  }
 }
 
 @media screen and (max-width: 780px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
@@ -246,6 +274,31 @@ footer{
 
 }
 
-@media screen and (max-width: 320px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
-
+@media screen and (max-width: 600px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
+  html{
+    font-size: 15px;
+    text-align: left;
+  }
+  #headerImg{
+    display: none;
+  }
+  header h1{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 200%;
+    margin-bottom: -1rem;
+    padding-top: 25px;
+  }
+  header h2{
+    width: 100%;
+    font-style: italic;
+  }
+  #contact p:nth-child(2){
+    display: none;
+  }
+  .info{
+    width: 30vw;
+  }
 }
