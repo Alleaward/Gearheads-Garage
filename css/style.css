@@ -1,0 +1,251 @@
+/*-------------DESKTOP SIZING // DEFAULT-------------------------------------*/
+
+/*-------------ID and Elements-----------------------------------------------*/
+html{
+  font-size: 20px;
+  background-image: url(../img/bg.jpg);
+  background-size: stretch;
+}
+body{
+  padding: 1rem;
+  font-family: tahoma;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+header{
+  width:100%;
+}
+#headerImg{
+  float: left;
+  margin-top: 65px;
+}
+header section{
+  padding: none;
+}
+h1, h2{
+  width: 100%;
+  color: orange;
+}
+h1, h2{
+  width: 100%;
+  color: orange;
+}
+header h1{
+  width: 80%;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 300%;
+  margin-bottom: -1rem;
+  float: left;
+}
+header h2{
+  width: 80%;
+  font-style: italic;
+  float: left;
+}
+nav{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+/*
+nav a{
+  color: white;
+  flex-basis: 33%;
+  text-decoration: none;
+  font-weight:bold;
+}*/
+nav a p:hover{
+  color:white;
+  background-color: darkorange;
+}
+nav p{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+section{
+  width:100%;
+  justify-content: center;
+}
+#contact{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: auto;
+  justify-content: center;
+}
+#carousel{
+  max-height: 500px;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+#carousel img{
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+#carousel button{
+  font-size: 150%;
+  position:absolute;
+  top: 45%;
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  border: solid black 2px;
+  border-radius: .3rem;
+  background-color: rgba(0, 0, 0, .7)
+}
+#services{
+  display: flex;
+  flex-flow: row wrap;
+}
+#information{
+  display: flex;
+  flex-flow: row wrap;
+}
+#modalForm{
+  display: none;
+  position: fixed;
+  margin-left: auto;
+  width: 40vw;
+  top: 20vh;
+  left:30vw;
+  right: 30vw;
+  padding: 1rem;
+  border: solid orange 3px;
+  border-radius: 10px;
+  background: black;
+}
+form input{
+  border-radius: 5px;
+  width: 95%;
+  margin: 1%;
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+}
+.formDesc{
+  width: 95%;
+  height: 5rem;
+  text-align: left;
+  margin:1%;
+  margin-top: 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.formSubmit{
+  width: 20%;
+  min-width: 70px;
+}
+iframe{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+footer{
+  width: 100%;
+}
+/*---------------Classes-----------------------------------------------------*/
+.halfCol{
+  width: 49%;
+}
+.fullCol{
+  width: 99%;
+}
+.fullHeight{
+  height: 100%;
+  padding-top: 1rem;
+}
+.floatLeft{
+  float: left;
+}
+.floatRight{
+  float: right;
+}
+.bottomBorder{
+  border-bottom: solid 3px orange;
+}
+.rightBtn{
+  position: absolute;
+  right: .5rem;
+}
+.leftBtn{
+  position: absolute;
+  left: .5rem;
+}
+.info{
+  background-color: green;
+  color: black;
+  font-weight: bold;
+  height: 30px;
+  display: inline-block;
+  line-height: 30px;
+  border-radius: 0px 10px 0px 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.testBorderGreen{
+  border: 2px dotted green;
+}
+.testBorderBlue{
+  border: 2px dotted blue;
+}
+.testBorderRed{
+  border: 2px dotted red;
+}
+.testBorderPurple{
+  border: 2px dotted purple;
+}
+.mySlides{
+  float:left;
+}
+
+/*--------------Smaller Resolutions  //  Phone ------------------------------*/
+@media screen and (max-width: 1440px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
+  html{
+    font-size: 15px;
+    text-align: center;
+  }
+  header h1{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 300%;
+    margin-bottom: -1rem;
+    float: left;
+  }
+  header h2{
+    width: 100%;
+    font-style: italic;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 1080px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
+
+}
+
+@media screen and (max-width: 780px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
+
+}
+
+@media screen and (max-width: 540px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
+
+}
+
+@media screen and (max-width: 320px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
+
+}
