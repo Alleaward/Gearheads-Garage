@@ -11,10 +11,10 @@ body{
   font-family: tahoma;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
+  width: 45vw;
   display: flex;
   flex-flow: row wrap;
   margin: 0px;
-  width: 50vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,10 +27,6 @@ header{
 }
 header section{
   padding: none;
-}
-h1, h2{
-  width: 100%;
-  color: orange;
 }
 h1, h2{
   width: 100%;
@@ -159,7 +155,10 @@ footer{
 }
 /*---------------Classes-----------------------------------------------------*/
 .halfCol{
-  width: 49%;
+  width: auto;
+  text-align: left;
+  margin-right: 10%;
+  border: 2px dotted red;
 }
 .fullCol{
   width: 99%;
@@ -213,92 +212,63 @@ footer{
 }
 
 /*--------------Smaller Resolutions  //  Phone ------------------------------*/
-@media screen and (max-width: 1400px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
-  html{
-    text-align: left;
-  }
-  #headerImg{
-    float: left;
-    margin-top: 35px;
-    margin-bottom: -20px;
-  }
-  header h1{
-    width: 85%;
-    color: white;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 300%;
-    margin-bottom: -1rem;
-    float: right;
+@media (max-width:1366px) {
+  body{
+    width: 60vw;
   }
   header h2{
-    width: 100%;
-    font-style: italic;
-    float: left;
+    font-size: 130%;
   }
 }
-
-@media screen and (max-width: 1080px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
-  html{
-    font-size: 15px;
-    text-align: left;
-  }
-  #headerImg{
-    float: left;
-    margin-top: 35px;
-    margin-bottom: -20px;
-    width: 14%;
+@media (max-width:1024px) {
+  body{
+    width: 70vw;
   }
   header h1{
-    width: 80%;
-    color: white;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 275%;
-    margin-bottom: -1rem;
-    float: right;
-    padding-top: 25px;
+    text-align: center;
+    font-size: 230%;
+    width:100%;
   }
   header h2{
-    width: 100%;
-    font-style: italic;
-    float: left;
-  }
-}
-
-@media screen and (max-width: 780px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
-
-}
-
-@media screen and (max-width: 540px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
-
-}
-
-@media screen and (max-width: 600px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
-  html{
-    font-size: 15px;
-    text-align: left;
+    text-align: center;
+    font-size: 110%;
+    width:100%;
   }
   #headerImg{
     display: none;
   }
+  .fullCol{
+    width: 95%;
+  }
+}
+@media (max-width:768px) {
+  body{
+    font-size: 90%;
+  }
   header h1{
-    width: 100%;
-    color: white;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 200%;
-    margin-bottom: -1rem;
-    padding-top: 25px;
+    text-align: center;
+    font-size: 230%;
+    width:100%;
   }
   header h2{
-    width: 100%;
-    font-style: italic;
+    text-align: center;
+    font-size: 100%;
+    width:100%;
   }
-  #contact p:nth-child(2){
+  #headerImg{
+    display: none;
+  }
+  nav p:nth-child(2){
     display: none;
   }
   .info{
     width: 30vw;
+    font-size: 90%;
   }
+  .halfCol{
+    padding:5px;
+    font-size: 90%;
+  }
+}
+
 }
