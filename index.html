@@ -3,24 +3,33 @@
   <head>
     <title>Gearheads Garage AU</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="bottomBorder">
-      <div id="headerImg" class="">
-        <img src="img/logo.png" width="auto" height="96px">
-      </div>
-      <section>
-        <h1 class="">Gearheads Garage</h1>
-        <h2 class="">Goldcoast Automotive Servicing and Repairs</h2>
+    <header class="container-fluid bottomBorder testBorderBlue">
+
+      <section class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-2 floatLeft">
+            <img src="img/logo.png" width="auto" height="96px">
+          </div>
+          <div class="col-sm-10">
+            <h1 class="">Gearheads Garage</h1>
+            <h2 class="">Goldcoast Automotive Servicing and Repairs</h2>
+          </div>
+        </div>
       </section>
+
     </header>
 
-    <nav id="contact" class="bottomBorder">
-      <p class="info">Call us: 0755392730</p>
-      <p>OR</p>
-      <a onclick="document.getElementById('modalForm').style.display='block'"><p class="info">Send us an inquiry</p></a>
+    <nav id="contact" class="container bottomBorder testBorderRed">
+      <p class="col-sm-4 info testBorderBlue">Call us: 0755392730</p>
+      <p class="col-sm-1 testBorderRed">OR</p>
+      <p class="col-sm-4 info testBorderBlue" onclick="document.getElementById('modalForm').style.display='block'">Send us an inquiry</p>
     </nav>
+
     <section class="bottomBorder">
       <h2>Welcome!</h2>
       <p>Modern, clean workshop with passionate staff who take pride in their trade.
@@ -41,38 +50,48 @@
         <img class="mySlides" src="img/example4.png" style="display:none;">
       </div>
 
-      <section id="services" class="bottomBorder">
-        <h2>WE SERVICE ALL MAKES AND MODELS:</h2>
-        <div class="halfCol">
-          <p>- Logbook servicing</p>
-          <p>- ALL mechanical repairs</p>
-          <p>- Brakes/Clutches/ Suspension</p>
-          <p>- Diagnostics</p>
-          <p>- Pre purchase inspections </p>
-        </div>
-        <div class="halfCol">
-          <p>- FREE Quotes on jobs - no obligation!</p>
-          <p>- Custom mods </p>
-          <p>- RWC's $90 </p>
-          <p>- Hydrographics</p>
+      <section class="container bottomBorder">
+        <div class="row">
+          <h2 class="col-sm-12">WE SERVICE ALL MAKES AND MODELS:</h2>
+          <div class="col-sm-6 testBorderGreen">
+            <p>- Logbook servicing</p>
+            <p>- ALL mechanical repairs</p>
+            <p>- Brakes/Clutches/ Suspension</p>
+            <p>- Diagnostics</p>
+            <p>- Pre purchase inspections </p>
+          </div>
+          <div class="col-sm-6 testBorderGreen">
+            <p>- FREE Quotes on jobs - no obligation!</p>
+            <p>- Custom mods </p>
+            <p>- RWC's $90 </p>
+            <p>- Hydrographics</p>
+          </div>
         </div>
       </section>
 
-      <section id="information" class="bottomBorder">
-          <h2>Opening Hours:</h2>
-          <p>
-            MONDAY: 8:00AM - 5:00PM<br/>
-            TUESDAY: 8:00AM - 5:00PM<br/>
-            WEDNESDAY: 8:00AM - 5:00PM<br/>
-            THURSDAY: 8:00AM - 5:00PM<br/>
-            FRIDAY: 8:00AM - 5:00PM<br/>
-            ​SATURDAY: 8:30 AM - 12:30 PM<br/>
-          </p>
+      <section class="bottomBorder container-fluid">
+        <div class="row">
+          <div class="col-sm-6 testBorderBlue">
+            <h2>Opening Hours:</h2>
+            <p>
+              MONDAY: 8:00AM - 5:00PM<br/>
+              TUESDAY: 8:00AM - 5:00PM<br/>
+              WEDNESDAY: 8:00AM - 5:00PM<br/>
+              THURSDAY: 8:00AM - 5:00PM<br/>
+              FRIDAY: 8:00AM - 5:00PM<br/>
+              ​SATURDAY: 8:30 AM - 12:30 PM<br/>
+            </p>
+          </div>
+          <div class="col-sm-6 testBorderGreen halfHeight">
+            <h2>Address:</h2>
+            <p>18 Kamholtz Court, Molendinar QLD 4214</p>
+            <h2>Phone:</h2>
+            <p>0755392730</p>
+          </div>
+        </div>
       </section>
 
-      <section class="bottomBorder">
-        <h2>Address:</h2>
-        <p>18 Kamholtz Court, Molendinar QLD 4214</p>
+      <section class="bottomBorder container-fluid">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d411.7026565934712!2d153.35811002558438!3d-27.986990067783303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9e970af3afc0e14!2sA1+SuperCheap+Tyres!5e0!3m2!1sen!2sau!4v1505206492882" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
 
