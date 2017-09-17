@@ -18,54 +18,34 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-header{
-  width:100%;
-}
-#headerImg{
-  float: left;
-  margin-top: 65px;
-}
-header section{
-  padding: none;
-}
 h1, h2{
-  width: 100%;
-  color: orange;
-}
-h1, h2{
-  width: 100%;
   color: orange;
 }
 header h1{
-  width: 80%;
   color: white;
   font-weight: bold;
   font-style: italic;
   font-size: 300%;
-  margin-bottom: -1rem;
-  float: left;
 }
 header h2{
-  width: 80%;
   font-style: italic;
-  float: left;
+  font-size: 130%;
+}
+#contact{
+  padding-top: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: auto;
+  justify-content: center;
 }
 nav{
-  width: 100%;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 }
-/*
-nav a{
-  color: white;
-  flex-basis: 33%;
-  text-decoration: none;
-  font-weight:bold;
-}*/
-nav a p:hover{
+.info:hover{
   color:white;
   background-color: darkorange;
 }
@@ -73,17 +53,17 @@ nav p{
   margin-left: 1rem;
   margin-right: 1rem;
   font-weight: bold;
+  height: auto;
 }
-section{
-  width:100%;
-  justify-content: center;
-}
-#contact{
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  flex-basis: auto;
-  justify-content: center;
+.info{
+  background-color: green;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 30px;
+  border-radius: 0px 10px 0px 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 #carousel{
   max-height: 500px;
@@ -108,13 +88,23 @@ section{
   border-radius: .3rem;
   background-color: rgba(0, 0, 0, .7)
 }
-#services{
-  display: flex;
-  flex-flow: row wrap;
+.rightBtn{
+  position: absolute;
+  right: .5rem;
 }
-#information{
-  display: flex;
-  flex-flow: row wrap;
+.mySlides{
+  float:left;
+}
+.leftBtn{
+  position: absolute;
+  left: .5rem;
+}
+iframe{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+footer{
+  width: 100%;
 }
 #modalForm{
   display: none;
@@ -150,23 +140,8 @@ form input{
   width: 20%;
   min-width: 70px;
 }
-iframe{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-footer{
-  width: 100%;
-}
-/*---------------Classes-----------------------------------------------------*/
-.halfCol{
-  width: 49%;
-}
-.fullCol{
-  width: 99%;
-}
-.fullHeight{
-  height: 100%;
-  padding-top: 1rem;
+.bottomBorder{
+  border-bottom: solid 3px orange;
 }
 .floatLeft{
   float: left;
@@ -174,27 +149,8 @@ footer{
 .floatRight{
   float: right;
 }
-.bottomBorder{
-  border-bottom: solid 3px orange;
-}
-.rightBtn{
-  position: absolute;
-  right: .5rem;
-}
-.leftBtn{
-  position: absolute;
-  left: .5rem;
-}
-.info{
-  background-color: green;
-  color: black;
-  font-weight: bold;
-  height: 30px;
-  display: inline-block;
-  line-height: 30px;
-  border-radius: 0px 10px 0px 10px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.marginTop{
+  margin-top: 1rem;
 }
 .testBorderGreen{
   border: 2px dotted green;
@@ -208,44 +164,103 @@ footer{
 .testBorderPurple{
   border: 2px dotted purple;
 }
-.mySlides{
-  float:left;
-}
-
-/*--------------Smaller Resolutions  //  Phone ------------------------------*/
-@media screen and (max-width: 1440px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
+/*pcs 1600px and below*/
+@media all and (max-width:1600px){
   html{
-    font-size: 15px;
+    font-size: 20px;
+  }
+  body{
+    width: 60vw;
+  }
+  header{
+    text-align: left;
+  }
+  iframe{
+    height: 80vh;
+  }
+  .info{
+  }
+}
+/*pcs 1366px and below*/
+@media all and (max-width:1366px){
+  html{
+    font-size: 20px;
+  }
+  body{
+    width: 70vw;
+  }
+  header{
+    text-align: left;
+  }
+  iframe{
+    height: 80vh;
+  }
+  .info{
+  }
+}
+/*large tablets and small pcs 1024px and below*/
+@media all and (max-width:1024px){
+  html{
+    font-size: 18px;
+  }
+  body{
+    width: 80vw;
+  }
+  header{
+    text-align: left;
+  }
+  iframe{
+    height: 80vh;
+  }
+  .info{
+  }
+}
+/*small tablets 800px and below*/
+@media all and (max-width:800px){
+  html{
+    font-size: 16px;
+  }
+  body{
+    width: 80vw;
+  }
+  header{
     text-align: center;
   }
-  header h1{
-    width: 100%;
-    color: white;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 300%;
-    margin-bottom: -1rem;
-    float: left;
+  iframe{
+    height: 70vh;
   }
-  header h2{
-    width: 100%;
-    font-style: italic;
-    float: left;
+  .info{
+    font-size: 14px;
   }
 }
-
-@media screen and (max-width: 1080px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
-
+/*larger phones 420px and below*/
+@media all and (max-width:420px){
+  html{
+    font-size: 10px;
+  }
+  body{
+    width: 80vw;
+  }
+  header{
+    text-align: center;
+  }
+  iframe{
+    height: 70vh;
+  }
 }
 
-@media screen and (max-width: 780px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
-
-}
-
-@media screen and (max-width: 540px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
-
-}
-
-@media screen and (max-width: 320px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
-
+/*Smallest phones 320px and below*/
+@media all and (max-width:320px){
+  html{
+    font-size: 10px;
+  }
+  body{
+    width: 80vw;
+  }
+  header{
+    text-align: center;
+  }
+  iframe{
+    height: 70vh;
+  }
 }
