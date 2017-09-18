@@ -253,7 +253,10 @@ form input{
   }
   #modalForm{
     width: 70vw;
-  }
+    left: 0px;
+    top: 0px;
+    right: none;
+    }
 }
 
 /*Smallest phones 320px and below*/
@@ -272,6 +275,8 @@ form input{
   }
   #modalForm{
     width: 70vw;
-    left: 15vw;
+    left: 0px;
+    top: 0px;
+    right: none;
   }
 }
