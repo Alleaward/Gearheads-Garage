@@ -102,6 +102,9 @@ nav p{
 iframe{
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width:100%;
+  height: 450px;
+
 }
 footer{
   width: 100%;
@@ -232,6 +235,7 @@ form input{
   .info{
     font-size: 14px;
   }
+
 }
 /*larger phones 420px and below*/
 @media all and (max-width:420px){
@@ -247,10 +251,13 @@ form input{
   iframe{
     height: 70vh;
   }
+  #modalForm{
+    width: 70vw;
+  }
 }
 
 /*Smallest phones 320px and below*/
-@media all and (max-width:320px){
+@media all and (max-width:340px){
   html{
     font-size: 10px;
   }
@@ -262,5 +269,9 @@ form input{
   }
   iframe{
     height: 70vh;
+  }
+  #modalForm{
+    width: 70vw;
+    left: 15vw;
   }
 }

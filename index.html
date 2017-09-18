@@ -13,7 +13,7 @@
       <section class="col-sm-12">
         <div class="row">
           <div class="col-sm-2 floatLeft">
-            <img src="img/logo.png" width="auto" height="96px">
+            <img src="img/logo.png" alt="The logo for Gearheads Garage" height="96">
           </div>
           <div class="col-sm-10">
             <h1 class="">Gearheads Garage</h1>
@@ -30,7 +30,7 @@
       <p class="col-sm-4 info" onclick="document.getElementById('modalForm').style.display='block'">Send us an inquiry</p>
     </nav>
 
-    <section class="bottomBorder">
+    <section class="bottomBorder marginTop">
       <h2>Welcome!</h2>
       <p>Modern, clean workshop with passionate staff who take pride in their trade.
         We provide top notch mechanical service and honest advice that best suits your budget and needs.
@@ -43,14 +43,14 @@
       <div id="carousel" class="bottomBorder">
         <button class="leftBtn" onclick="plusDivs(-1)">&#10094;</button>
         <button class="rightBtn" onclick="plusDivs(+1)">&#10095;</button>
-        <img class="mySlides" src="img/example0.webp">
-        <img class="mySlides" src="img/example1.jpg" style="display:none;">
-        <img class="mySlides" src="img/example2.jpg" style="display:none;">
-        <img class="mySlides" src="img/example3.jpg" style="display:none;">
-        <img class="mySlides" src="img/example4.png" style="display:none;">
+        <img class="mySlides" src="img/example0.webp" alt="A VROOM VROOM car.">
+        <img class="mySlides" src="img/example1.jpg" alt="A VROOM VROOM car." style="display:none;">
+        <img class="mySlides" src="img/example2.jpg" alt="A VROOM VROOM car." style="display:none;">
+        <img class="mySlides" src="img/example3.jpg" alt="A VROOM VROOM car." style="display:none;">
+        <img class="mySlides" src="img/example4.png" alt="A VROOM VROOM car." style="display:none;">
       </div>
 
-      <section class="container bottomBorder">
+      <section class="container bottomBorder marginTop">
         <div class="row">
           <h2 class="col-sm-12">WE SERVICE ALL MAKES AND MODELS:</h2>
           <div class="col-sm-6">
@@ -91,24 +91,27 @@
         </div>
       </section>
 
-      <section class="bottomBorder container-fluid">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d411.7026565934712!2d153.35811002558438!3d-27.986990067783303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9e970af3afc0e14!2sA1+SuperCheap+Tyres!5e0!3m2!1sen!2sau!4v1505206492882" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <section class="bottomBorder container-fluid marginTop">
+        <h2>Location: </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d411.7026565934712!2d153.35811002558438!3d-27.986990067783303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9e970af3afc0e14!2sA1+SuperCheap+Tyres!5e0!3m2!1sen!2sau!4v1505206492882" width="100%" height="450" style="border:0" allowfullscreen></iframe>
       </section>
 
 
-      <form id="modalForm" class="bottomBorder">
-        <input type="text" placeholder="Name: "></input>
-        <input type="text" placeholder="Email: "></input>
-        <input type="text" placeholder="Phone: "></input>
-        <input type="text" placeholder="Make/Model: "></input>
-        <input type="text" placeholder="Year: "></input>
-        <textarea placeholder="Type of services needed: " class="formDesc floatLeft"></textarea>
-        <input type="submit" class="formSubmit floatLeft" onclick="document.getElementById('modalForm').style.display='none'; "></input>
-        <input type="submit" class="formSubmit floatLeft" onclick="document.getElementById('modalForm').style.display='none'; " value="Cancel"></input>
+      <form id="modalForm" class="bottomBorder" action="php/formPOST.php" method="post" target="formTarget">
+        <input type="text" placeholder="Name: " name="Name">
+        <input type="email" placeholder="Email: " name="Email">
+        <input type="number" placeholder="Phone: " name="Phone">
+        <input type="text" placeholder="Make/Model: " name="carInfo">
+        <input type="number" placeholder="Year: " name="carYear">
+        <textarea placeholder="Type of services needed: " class="formDesc floatLeft" name="description"></textarea>
+        <input type="submit" name="submit" class="formSubmit floatLeft" onclick="document.getElementById('modalForm').style.display='none'; ">
+        <input type="close" class="formSubmit floatLeft" onclick="document.getElementById('modalForm').style.display='none'; " value="Cancel">
       </form>
 
+      <iframe name="formTarget" style="display:none"></iframe>
+
     <footer>
-      <p>&copy; Gearheads Garage Goldcoast</p>
+      <p>&copy; Allea Ward</p>
     </footer>
 
     <script src="js/script.js"></script>
