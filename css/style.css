@@ -94,6 +94,7 @@ nav p{
 }
 .mySlides{
   float:left;
+  object-fit: cover;
 }
 .leftBtn{
   position: absolute;
@@ -102,6 +103,8 @@ nav p{
 iframe{
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: calc(100% - 2px);
+  height: calc(450px);
 }
 footer{
   width: 100%;
@@ -152,6 +155,7 @@ form input{
 .marginTop{
   margin-top: 1rem;
 }
+
 .testBorderGreen{
   border: 2px dotted green;
 }
@@ -232,6 +236,7 @@ form input{
   .info{
     font-size: 14px;
   }
+
 }
 /*larger phones 420px and below*/
 @media all and (max-width:420px){
@@ -247,10 +252,16 @@ form input{
   iframe{
     height: 70vh;
   }
+  #modalForm{
+    width: 70vw;
+    left: 0px;
+    top: 0px;
+    right: none;
+    }
 }
 
 /*Smallest phones 320px and below*/
-@media all and (max-width:320px){
+@media all and (max-width:340px){
   html{
     font-size: 10px;
   }
@@ -262,5 +273,11 @@ form input{
   }
   iframe{
     height: 70vh;
+  }
+  #modalForm{
+    width: 70vw;
+    left: 0px;
+    top: 0px;
+    right: none;
   }
 }
