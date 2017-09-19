@@ -15,6 +15,7 @@ if ($_POST['submit']) {
   $body = "From: $name\n Email: $email\n Phone: $phone\n Make/Model: $carInfo\n Year: $carYear\n Inquiry: $description";
 
   mail($to,$subject,$body,$email);
+
   //
   // if(mail($to, $subject, $body, $email)){
   //     echo '<p>Your message has been sent!</p>';
