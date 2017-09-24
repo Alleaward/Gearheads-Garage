@@ -54,6 +54,10 @@ nav p{
   margin-right: 1rem;
   font-weight: bold;
   height: auto;
+  line-height: 30px;
+}
+nav a{
+  height: 30px;
 }
 .info{
   background-color: green;
@@ -201,6 +205,16 @@ form input{
   }
   .info{
   }
+
+}
+/*pcs 1366px and below*/
+@media all and (max-width:1158px){
+  nav a{
+    height: 60px;
+  }
+  nav p{
+    height: 60px;
+  }
 }
 /*large tablets and small pcs 1024px and below*/
 @media all and (max-width:1024px){
@@ -237,6 +251,14 @@ form input{
     font-size: 14px;
   }
 
+}
+@media all and (max-width:550px){
+  nav a{
+    height: 30px;
+  }
+  nav p{
+    height: 30px;
+  }
 }
 /*larger phones 420px and below*/
 @media all and (max-width:420px){
