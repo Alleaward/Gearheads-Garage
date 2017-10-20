@@ -16,11 +16,5 @@ if ($_POST['submit']) {
 
   mail($to,$subject,$body,$email);
 
-  //
-  // if(mail($to, $subject, $body, $email)){
-  //     echo '<p>Your message has been sent!</p>';
-  // } else {
-  //     echo '<p>Something went wrong, go back and try again!</p>';
-  // }
 }
 ?>
