@@ -10,7 +10,7 @@ if ($_POST['submit']) {
   $description = $_POST['description'];
 
   $from = $email;
-  $to = 'Allea_ward@hotmail.com'; // PUT IN ROBS EMAIL AND CHANGE THE EMAIL IN THE INI
+  $to = 'Gearheadsgarageau@gmail.com'; 
   $subject = 'Website Inquiry from '.$name.".";
   $body = "From: $name\n Email: $email\n Phone: $phone\n Make/Model: $carInfo\n Year: $carYear\n Inquiry: $description";
 
