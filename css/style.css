@@ -30,6 +30,10 @@ header h1{
   font-style: italic;
   font-size: 300%;
 }
+#fbLogo{
+  width: 3rem;
+  margin-right: 1rem; 
+}
 header h2{
   font-style: italic;
   font-size: 130%;
@@ -48,9 +52,8 @@ nav{
   justify-content: center;
   text-align: center;
 }
-.info:hover{
-  color:white;
-  background-color: dark#f4592b;
+nav a{
+  height: 30px;
 }
 nav p{
   margin-left: 1rem;
@@ -59,11 +62,15 @@ nav p{
   height: auto;
   line-height: 30px;
 }
-nav a{
-  height: 30px;
+nav p{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-weight: bold;
+  height: auto;
+  line-height: 30px;
 }
 .info{
-  background-color: green;
+  background-color: #30a240;
   color: black;
   font-weight: bold;
   display: inline-block;
@@ -71,6 +78,10 @@ nav a{
   border-radius: 0px 10px 0px 10px;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.info:hover{
+  color: white;
+  background-color: orange;
 }
 #carousel{
   max-height: 500px;
@@ -102,6 +113,7 @@ nav a{
 .mySlides{
   float:left;
   object-fit: cover;
+  display: none;
 }
 .leftBtn{
   position: absolute;
@@ -163,6 +175,9 @@ form input{
   margin-top: 1rem;
 }
 
+.hide{
+  display: none;
+}
 .testBorderGreen{
   border: 2px dotted green;
 }

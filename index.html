@@ -1,6 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60686090-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-60686090-1');
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
     <title>Gear Heads Garage | Molendinar | Gold Coast Mechanic</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -9,7 +20,6 @@
      - No Obligation!">
     <meta name="keywords" content="Ashmore, Garage, Goldcoast, Mechanic, Molendinar"/>
     <meta name="author" content="Allea Ward">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -19,31 +29,16 @@
         Garage, Mechanical Repairs, Logbook Servicing, Custom Mods.
         Phone:55392730'"/>
     </header>
-    <!--
-    <header class="container-fluid bottomBorder">
-
-      <section class="col-sm-12">
-        <div class="row">
-          <div class="col-sm-2 floatLeft">
-            <img src="img/logo.png" alt="The logo for Gearheads Garage" height="96">
-          </div>
-          <div class="col-sm-10">
-            <h1 class="">Gearheads Garage</h1>
-            <h2 class="">Goldcoast Automotive Servicing and Repairs</h2>
-          </div>
-        </div>
-      </section>
-
-    </header> -->
 
     <nav id="contact" class="container bottomBorder">
-      <a href="tel:+61755392730" class="col-sm-4 info">Call us: 0755392730</a>
+      <a href="tel:+61755392730 info" class="col-sm-4 info">Call us: 0755392730</a>
       <p class="col-sm-1">OR</p>
-      <p class="col-sm-4 info" onclick="document.getElementById('modalForm').style.display='block'">Send us an inquiry</p>
+      <p class="col-sm-4 info" onclick="document.getElementById('modalForm').style.display='block', {passive: true}">Send us an inquiry</p>
     </nav>
 
     <section class="bottomBorder marginTop">
-      <h2>Welcome!</h2>
+      <h1>Welcome to Gearheads Garage!</h1>
+      <a href="https://www.facebook.com/GearHeadsGarageAU/"><img id="fbLogo" class="floatLeft" src="img/fb.png" alt="The facebook logo."/></a>
       <p>Gearheads Garage is a modern, clean workshop with passionate staff who take pride in their trade.
         We provide top notch mechanical service and honest advice that best suits your budget and needs.
         Our goal is to become your trusted mechanic and make your car perform at its best.
@@ -55,25 +50,25 @@
       <div id="carousel" class="bottomBorder">
         <button class="leftBtn" onclick="plusDivs(-1)">&#10094;</button>
         <button class="rightBtn" onclick="plusDivs(+1)">&#10095;</button>
-        <img class="mySlides" src="img/1.jpg" alt="The front of the Gearheads Garage Workshop in Ashmore/Molendinar/Nerang." style="display:none;">
-        <img class="mySlides" src="img/2.jpg" alt="A purple sports car parked in the Gearheads Garage carpark." style="display:none;">
-        <img class="mySlides" src="img/3.jpg" alt="A motorbike being fixed." style="display:none;">
-        <img class="mySlides" src="img/4.jpg" alt="A top down view of the workshop." style="display:none;">
-        <img class="mySlides" src="img/5.jpg" alt="A second top down view of the workshop." style="display:none;">
-        <img class="mySlides" src="img/6.jpg" alt="A motorbike after being fixed." style="display:none;">
-        <img class="mySlides" src="img/7.jpg" alt="A car up on the hoist." style="display:none;">
-        <img class="mySlides" src="img/8.jpg" alt="A blue sports car parked in the Gearheads Garage parking lot." style="display:none;">
-        <img class="mySlides" src="img/9.jpg" alt="A green sports car parked in the Gearheads Garage parking lot." style="display:none;">
-        <img class="mySlides" src="img/10.jpg" alt="One of the mechanics repairing a car engine." style="display:none;">
-        <img class="mySlides" src="img/11.jpg" alt="A red and black car parked in the Gearheads Garage parking lot." style="display:none;">
-        <img class="mySlides" src="img/12.jpg" alt="A black car in the workshop." style="display:none;">
-        <img class="mySlides" src="img/13.jpg" alt="A car engine after being repaired." style="display:none;">
-        <img class="mySlides" src="img/14.jpg" alt="A second car engine after being repaired." style="display:none;">
-        <img class="mySlides" src="img/15.jpg" alt="A car up in the hoist to be worked on." style="display:none;">
-        <img class="mySlides" src="img/16.jpg" alt="A red sportscar parked in the Gearheads Garage parking lot." style="display:none;">
-        <img class="mySlides" src="img/17.jpg" alt="Another red car in the middle of a test drive." style="display:none;">
-        <img class="mySlides" src="img/18.jpg" alt="One car up in the hoist with another below it." style="display:none;">
-        <img class="mySlides" src="img/19.jpg" alt="A car being serviced in the Gearheads Garage workshop." style="display:none;">
+        <img class="mySlides" src="img/1.jpg" alt="The front of the Gearheads Garage Workshop in Ashmore/Molendinar/Nerang.">
+        <img class="mySlides" src="img/2.jpg" alt="A purple sports car parked in the Gearheads Garage carpark." >
+        <img class="mySlides" src="img/3.jpg" alt="A motorbike being fixed." >
+        <img class="mySlides" src="img/4.jpg" alt="A top down view of the workshop." >
+        <img class="mySlides" src="img/5.jpg" alt="A second top down view of the workshop." >
+        <img class="mySlides" src="img/6.jpg" alt="A motorbike after being fixed.">
+        <img class="mySlides" src="img/7.jpg" alt="A car up on the hoist.">
+        <img class="mySlides" src="img/8.jpg" alt="A blue sports car parked in the Gearheads Garage parking lot.">
+        <img class="mySlides" src="img/9.jpg" alt="A green sports car parked in the Gearheads Garage parking lot." >
+        <img class="mySlides" src="img/10.jpg" alt="One of the mechanics repairing a car engine." >
+        <img class="mySlides" src="img/11.jpg" alt="A red and black car parked in the Gearheads Garage parking lot." >
+        <img class="mySlides" src="img/12.jpg" alt="A black car in the workshop." >
+        <img class="mySlides" src="img/13.jpg" alt="A car engine after being repaired." >
+        <img class="mySlides" src="img/14.jpg" alt="A second car engine after being repaired." >
+        <img class="mySlides" src="img/15.jpg" alt="A car up in the hoist to be worked on." >
+        <img class="mySlides" src="img/16.jpg" alt="A red sportscar parked in the Gearheads Garage parking lot." >
+        <img class="mySlides" src="img/17.jpg" alt="Another red car in the middle of a test drive." >
+        <img class="mySlides" src="img/18.jpg" alt="One car up in the hoist with another below it." >
+        <img class="mySlides" src="img/19.jpg" alt="A car being serviced in the Gearheads Garage workshop." >
       </div>
 
       <section class="container bottomBorder marginTop">
@@ -114,7 +109,7 @@
 
       <section class="bottomBorder container-fluid marginTop">
         <h2>Location: </h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d880.8046106333687!2d153.3578422043355!3d-27.987212466942214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b911a92969ee189%3A0xaafb0786e89b8d54!2sGearheads+Garage!5e0!3m2!1sen!2sau!4v1505841220733" style="border:0" allowfullscreen>
+        <iframe name="Google Maps" title="Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d880.8046106333687!2d153.3578422043355!3d-27.987212466942214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b911a92969ee189%3A0xaafb0786e89b8d54!2sGearheads+Garage!5e0!3m2!1sen!2sau!4v1505841220733" style="border:0" allowfullscreen>
         </iframe>
       </section>
 
@@ -125,17 +120,16 @@
         <input type="text" placeholder="Make/Model: " name="carInfo">
         <input type="number" placeholder="Year: " name="carYear">
         <textarea placeholder="Type of services needed: " class="formDesc floatLeft" name="description"></textarea>
-        <input type="submit" name="submit" class="formSubmit floatLeft" onclick="document.getElementById('modalForm').style.display='none'; ">
-        <input type="submit" class="formSubmit floatLeft" onclick="document.getElementById('modalForm').style.display='none'; " value="Cancel">
+        <input type="submit" name="submit" class="formSubmit floatLeft" onclick="document.getElementById('modalForm').style.display='none', {passive: true}; ">
+        <input type="submit" class="formSubmit floatLeft" onclick="document.getElementById('modalForm').style.display='none', {passive: true}; " value="Cancel">
       </form>
 
-      <iframe name="formTarget" style="display:none"></iframe>
+      <iframe name="formTarget" class="hide"></iframe>
 
     <footer>
       <p>&copy; Gearheads Garage 2017</p>
     </footer>
 
     <script src="js/script.js"></script>
-
   </body>
 </html>
