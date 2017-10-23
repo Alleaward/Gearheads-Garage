@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /img
 Disallow: /php
-Disallow: /js
 
 Sitemap: http://www.gearheadsgarageau.com/sitemap.xml
