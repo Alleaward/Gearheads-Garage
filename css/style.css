@@ -32,7 +32,7 @@ header h1{
 }
 #fbLogo{
   width: 3rem;
-  margin-right: 1rem; 
+  margin-right: 1rem;
 }
 header h2{
   font-style: italic;
@@ -62,13 +62,6 @@ nav p{
   height: auto;
   line-height: 30px;
 }
-nav p{
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-weight: bold;
-  height: auto;
-  line-height: 30px;
-}
 .info{
   background-color: #30a240;
   color: black;
@@ -82,6 +75,8 @@ nav p{
 .info:hover{
   color: white;
   background-color: orange;
+  text-decoration: none;
+
 }
 #carousel{
   max-height: 500px;
