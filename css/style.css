@@ -3,8 +3,7 @@
 /*-------------ID and Elements-----------------------------------------------*/
 html{
   font-size: 20px;
-  background-image: url(../img/bg.jpg);
-  background-size: stretch;
+  background-image: url(../img/background.png);
 }
 body{
   padding: 1rem;
