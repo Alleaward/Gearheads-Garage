@@ -121,6 +121,10 @@ iframe{
 footer{
   width: 100%;
 }
+#devInfo{
+  font-size: 0.8rem;
+  color: white;
+}
 #modalForm{
   display: none;
   position: fixed;
