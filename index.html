@@ -18,9 +18,21 @@
         <img id="headerImg" src="img/header_edit.jpg" alt="A header image that says 'Gearheads Garage, Mechanical Repairs, Logbook Servicing, Custom Mods. Phone:55392730'"
         /> </header>
     <nav id="contact" class="container bottomBorder">
-        <a href="tel:+61755392730" title="Phone Number" class="col-sm-4 info">Call us: 0755392730</a>
-        <p class="col-sm-1">OR</p>
-        <p class="col-sm-4 info" onclick="document.getElementById('modalForm').style.display='block', {passive: true}">Send us an inquiry</p>
+        <a class="info" href="tel:+61755392730" title="Phone Number">Call us: 0755392730</a>
+        <!-- <div class="info" onclick="document.getElementById('modalForm').style.display='block', {passive: true}"><p>Send us an inquiry</p></div> -->
+        <p class="info" onclick="$(modalForm).slideToggle(), {passive: true}">Send us an inquiry</p>
+        
+        <form id="modalForm" class="bottomBorder" action="php/formPOST.php" method="post" target="formTarget">
+            <input type="text" placeholder="Name: " name="Name" maxlength="12" required>
+            <input type="email" placeholder="Email: (Must be valid)" name="Email" required>
+            <input type="number" placeholder="Phone: " name="Phone" required>
+            <input type="text" placeholder="Make/Model: " name="carInfo" required>
+            <input type="number" placeholder="Year: " name="carYear" required>
+            <textarea placeholder="Type of services needed: " class="formDesc floatLeft" name="description" required></textarea>
+            <input type="submit" name="submit" id="submit" class="formSubmit floatLeft" value="Submit">
+            <input type="submit" name="cancel" id="cancel" class="formSubmit floatLeft" value="Cancel" onclick="$(modalForm).slideToggle(), {passive: true}">
+        </form>
+
     </nav>
     <section class="bottomBorder marginTop">
         <h1>Welcome to Gearheads Garage!</h1>
@@ -92,16 +104,7 @@
         <iframe name="Google Maps" title="Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d880.8046106333687!2d153.3578422043355!3d-27.987212466942214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b911a92969ee189%3A0xaafb0786e89b8d54!2sGearheads+Garage!5e0!3m2!1sen!2sau!4v1505841220733"
             style="border:0" allowfullscreen> </iframe>
     </section>
-    <form id="modalForm" class="bottomBorder" action="php/formPOST.php" method="post" target="formTarget">
-        <input type="text" placeholder="Name: " name="Name" maxlength="12" required>
-        <input type="email" placeholder="Email: (Must be valid)" name="Email" required>
-        <input type="number" placeholder="Phone: " name="Phone" required>
-        <input type="text" placeholder="Make/Model: " name="carInfo" required>
-        <input type="number" placeholder="Year: " name="carYear" required>
-        <textarea placeholder="Type of services needed: " class="formDesc floatLeft" name="description" required></textarea>
-        <input type="submit" name="submit" id="submit" class="formSubmit floatLeft" value="Submit">
-        <input type="submit" name="cancel" id="cancel" class="formSubmit floatLeft" value="Cancel" onclick="document.getElementById('modalForm').style.display='none', {passive: true}">
-    </form>
+
     <iframe name="formTarget" class="hide"></iframe>
     <footer>
         <p class="floatLeft">&copy; Gearheads Garage 2017 (

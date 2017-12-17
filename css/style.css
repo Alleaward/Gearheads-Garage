@@ -14,6 +14,7 @@ body{
   flex-flow: row wrap;
   margin: 0px;
   width: 50vw;
+  min-width: 250px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -44,36 +45,23 @@ header h2{
   flex-basis: auto;
   justify-content: center;
 }
-nav{
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
-nav a{
-  height: 30px;
-}
-nav p{
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-weight: bold;
-  height: auto;
-  line-height: 30px;
-}
 .info{
-  background-color: #30a240;
+  background-color: #3CB449;
+  padding: 5px;
+  border-radius: 10px;
   color: black;
+  margin: 20px;
+  margin-top: 0px;
+  height: 2em;
+  line-height: 1.5em;
+  width: 40%;
+  min-width: 200px;
+  text-align: center;
   font-weight: bold;
-  display: inline-block;
-  line-height: 30px;
-  border-radius: 0px 10px 0px 10px;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
-.info:hover{
-  color: white;
-  background-color: orange;
+.info:hover, nav a:hover{
+  color: black;
+  background-color: #f4592b;
   text-decoration: none;
 }
 #carousel{
@@ -127,12 +115,8 @@ footer{
 }
 #modalForm{
   display: none;
-  position: fixed;
-  margin-left: auto;
-  width: 40vw;
-  top: 20vh;
-  left:30vw;
-  right: 30vw;
+  margin-bottom: 20px;
+  width: 100%;
   padding: 1rem;
   border: solid #f4592b 3px;
   border-radius: 10px;
@@ -222,17 +206,9 @@ form input{
   }
 
 }
-/*pcs 1366px and below*/
-@media all and (max-width:1158px){
-  nav a{
-    height: 60px;
-  }
-  nav p{
-    height: 60px;
-  }
-}
+
 /*large tablets and small pcs 1024px and below*/
-@media all and (max-width:1024px){
+@media all and (max-width:1060px){
   html{
     font-size: 18px;
   }
@@ -245,11 +221,10 @@ form input{
   iframe{
     height: 80vh;
   }
-  .info{
-  }
+
 }
 /*small tablets 800px and below*/
-@media all and (max-width:800px){
+@media all and (max-width:920px){
   html{
     font-size: 16px;
   }
@@ -262,24 +237,28 @@ form input{
   iframe{
     height: 70vh;
   }
-  .info{
-    font-size: 14px;
-    width: 80%;
-  }
 
 }
-@media all and (max-width:550px){
-  nav a{
-    height: 30px;
+@media all and (max-width:780px){
+  h1, h2, h3, h4{
+    font-size: 130%;
   }
-  nav p{
-    height: 30px;
+  .info{
+    width: 99%;
+    margin: 0px;
+    margin-bottom: 20px;
+    min-width: 0px;
+  }
+  #contact{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
+
 /*larger phones 420px and below*/
 @media all and (max-width:420px){
-  html{
-    font-size: 10px;
+  h1, h2, h3, h4{
+    font-size: 130%;
   }
   body{
     width: 90vw;
@@ -290,18 +269,30 @@ form input{
   iframe{
     height: 70vh;
   }
-  #modalForm{
-    width: 70vw;
-    left: 0px;
-    top: 0px;
-    right: none;
-    }
+  .info{
+    width: 99%;
+    margin: 0px;
+    margin-bottom: 20px;
+    font-size: 80%;
+  }
+  #contact{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 /*Smallest phones 320px and below*/
 @media all and (max-width:340px){
+
   html{
-    font-size: 10px;
+    font-size: 80%;
+  }
+  h1, h2, h3, h4{
+    font-size: 15px;
+  }
+  h1{
+    font-size: 25px;
+    text-align: center;
   }
   body{
     width: 80vw;
@@ -319,8 +310,14 @@ form input{
     right: none;
   }
   .info{
-    width: 90%;
-    line-height: normal;
-    height: auto;
+    width: 99%;
+    margin: 0px;
+    margin-bottom: 20px;
+    font-size: 80%;
   }
+  #contact{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
 }
