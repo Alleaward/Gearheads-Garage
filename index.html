@@ -19,7 +19,6 @@
         /> </header>
     <nav id="contact" class="container bottomBorder">
         <a class="info" href="tel:+61755392730" title="Phone Number">Call us: 0755392730</a>
-        <!-- <div class="info" onclick="document.getElementById('modalForm').style.display='block', {passive: true}"><p>Send us an inquiry</p></div> -->
         <p class="info" onclick="$(modalForm).slideToggle(), {passive: true}">Send us an inquiry</p>
         
         <form id="modalForm" class="bottomBorder" action="php/formPOST.php" method="post" target="formTarget">
@@ -29,7 +28,7 @@
             <input type="text" placeholder="Make/Model: " name="carInfo" required>
             <input type="number" placeholder="Year: " name="carYear" required>
             <textarea placeholder="Type of services needed: " class="formDesc floatLeft" name="description" required></textarea>
-            <input type="submit" name="submit" id="submit" class="formSubmit floatLeft" value="Submit">
+            <input type="submit" name="submit" id="submit" class="formSubmit floatLeft" value="Submit" onclick="$(modalForm).slideToggle(), {passive: true}">
             <input type="submit" name="cancel" id="cancel" class="formSubmit floatLeft" value="Cancel" onclick="$(modalForm).slideToggle(), {passive: true}">
         </form>
 
