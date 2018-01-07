@@ -1,4 +1,0 @@
-The Old Name Servers
-ns10.wixdns.net
-ns11.wixdns.net
-Points too: 23.236.62.147
